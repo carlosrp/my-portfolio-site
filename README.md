@@ -1,4 +1,4 @@
-# my-portfilio-site
+# my-portfolio-site
 My Portfolio Site
 
 Template Site for portfolio of projects.
