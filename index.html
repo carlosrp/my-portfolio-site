@@ -7,82 +7,83 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <base target="_blank">
 
     <title>My Porfolio Site</title>
-    <!--<link href='http://fonts.googleapis.com/css?family=Baumans|Expletus+Sans:400,700' rel='stylesheet' type='text/css'>-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/jquery-2.1.4.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!--<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial"/>-->
   </head>
 
   <body>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="./images/100x100.jpeg">
+      <div class="row page-header">
+        <div class="col-xs-4">
+          <img class="logo" src="./images/Udacity.jpg" alt="Logo image">
         </div>
-        <div class="col-md-6 text-right text-uppercase">
+        <div class="col-xs-8 text-right text-uppercase page-title">
           <h1>Jane Doette</h1>
-          <h3>Front-end Ninja</h3>
+          <h2>Front-end Ninja</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <img class="img-responsive" src="./images/1140x350.jpeg">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="images/powlett_large.jpg">
+            <source media="(max-width: 1199px)"
+                    srcset="images/powlett_small.jpg">
+            <img class="img-responsive main-img" src="images/powlett_small.jpg" alt="Main Feature Image">
+          </picture>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2>Featured Work</h2>
+          <h3>Featured Work</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 text-center">
-          <img class="img-responsive" src="./images/555x300.jpeg"
-          data-toggle="modal" data-target="#Img1">
-          <h3>Appify</h3>
-          <p><a href="http://github.com/">Link to project</a></p>
+        <div class="col-md-4 text-center">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="images/inverloch_large.jpg">
+            <source media="(max-width: 959px)"
+                    srcset="images/inverloch_small.jpg">
+            <img class="img-responsive project-img" src="images/inverloch_small.jpg"
+                data-toggle="modal" data-target="#Img1" alt="Project 1">
+          </picture>
+          <h4>INVERLOCH</h4>
+          <p><a href="https://github.com/carlosrp/my-portfolio-site">https://github.com/carlosrp/my-portfolio-site</a></p>
         </div>
-        <div class="col-md-6 text-center">
-          <img class="img-responsive" src="./images/555x300.jpeg"
-          data-toggle="modal" data-target="#Img2" >
-          <h3>Appify</h3>
-          <p><a href="http://github.com/">Link to project</a></p>
+        <div class="col-md-4 text-center">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="images/kilcunda_large.jpg">
+            <source media="(max-width: 959px)"
+                    srcset="images/kilcunda_small.jpg">
+            <img class="img-responsive project-img" src="images/kilcunda_small.jpg"
+            data-toggle="modal" data-target="#Img2" alt="Project 2">
+          </picture>
+          <h4>KILCUNDA</h4>
+          <p><a href="https://github.com/carlosrp/my-portfolio-site">https://github.com/carlosrp/my-portfolio-site</a></p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 text-center">
-          <img class="img-responsive" src="./images/555x300.jpeg"
-          data-toggle="modal" data-target="#Img3" >
-          <h3>Appify</h3>
-          <p><a href="http://github.com/">Link to project</a></p>
-        </div>
-        <div class="col-md-6 text-center">
-          <img class="img-responsive" src="./images/555x300.jpeg"
-          data-toggle="modal" data-target="#Img4" >
-          <h3>Appify</h3>
-          <p><a href="http://github.com/">Link to project</a></p>
-        </div>
-      </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="Img1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images/555x300.jpeg">
-            This was my first project in this class. I learned a lot about HTML and CSS.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+        <div class="col-md-4 text-center">
+          <picture>
+            <source media="(min-width: 960px)"
+                    srcset="images/cairns_large.jpg">
+            <source media="(max-width: 959px)"
+                    srcset="images/cairns_small.jpg">
+            <img class="img-responsive project-img" src="images/cairns_small.jpg"
+            data-toggle="modal" data-target="#Img3" alt="Project 3">
+          </picture>
+          <h4>CAIRNS</h4>
+          <p><a href="https://github.com/carlosrp/my-portfolio-site">https://github.com/carlosrp/my-portfolio-site</a></p>
         </div>
       </div>
     </div>
+
 </body>
 </html>
